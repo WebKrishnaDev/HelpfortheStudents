@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('Background_@.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Poppins', 'sans-serif';
+    height: 100%;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navtitle {
+    margin: 0;
+    font-size: 1.5em;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+}
+
+#darkmode-toggle {
+    font-family: 'Poppins', 'sans-serif';
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    font-size: medium;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin: 5px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+    margin: auto;
+}
+
+.cont1, .cont2, .cont3, .cont4, .cont5, .cont6, .cont7, .cont8 {
+    background-color: white;
+    color: black;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.th1 {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.button1, .button2, .button3, .button4, .button5, .vidbutton1, .vidbuttonp1 {
+    margin-top: 5px;
+    padding: 10px 20px;
+    font-family: 'Poppins', 'sans-serif';
+    font-size: medium;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.button1:hover, .button2:hover, .button3:hover, .button4:hover, .button5:hover, .vidbutton1:hover, .vidbuttonp1:hover {
+    background-color: #0000ff;
+    transform: translateY(3px);
+}
+
+.vidcont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.chapters{
+    margin: 5px;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.cont1:hover, .cont2:hover, .cont3:hover, .cont4:hover, .cont5:hover, .cont6:hover, .cont7:hover, .cont8:hover {
+    animation: pulse 0.77s ease-in-out;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.6);
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+.footer a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.feedback {
+    padding: 20px;
+    background-color: black;
+    margin: 20px 0;
+}
+
+.feedback h2 {
+    margin-bottom: 15px;
+}
+
+.feedback label {
+    display: block;
+    margin-top: 10px;
+}
+
+.feedback input, .feedback textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.feedback button {
+    font-family: 'Poppins', 'sans-serif';
+    font-size: medium;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.feedback button:hover {
+    background-color: #0056b3;
+}
+
+.darkmode-active .cards {
+    background-color: black;
+    color: white;
+}
+
+.darkmode-active .th1 {
+    border: 5px solid orange;
+}
+
+.darkmode-active .cont1, .darkmode-active .cont2, .darkmode-active .cont3, .darkmode-active .cont4, .darkmode-active .cont5, .darkmode-active .cont6, .darkmode-active .cont7, .darkmode-active .cont8 {
+    background-color: black;
+    color: white;
+}
+
+.darkmode-active .navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.darkmode-active .button1, .darkmode-active .button2, .darkmode-active .button3, .darkmode-active .button4, .darkmode-active .button5, .darkmode-active .vidbutton1, .darkmode-active .vidbuttonp1 {
+    background-color: #007BFF;
+    color: white;
+}
+
+.darkmode-active .button1:hover, .darkmode-active .button2:hover, .darkmode-active .button3:hover, .darkmode-active .button4:hover, .darkmode-active .button5:hover, .darkmode-active .vidbutton1:hover, .darkmode-active .vidbuttonp1:hover {
+    background-color: #0000ff;
+}
+
+.darkmode-active footer {
+    color: white;
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .footer p {
+        font-size: 0.9em;
+    }
+}
+
+
+@media (min-width: 600px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cont1, .cont2, .cont3, .cont4, .cont5 {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (min-width: 900px) {
+    .cont1, .cont2, .cont3, .cont4, .cont5 {
+        width: calc(33.333% - 40px);
+    }
+}
+
